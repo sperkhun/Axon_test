@@ -38,6 +38,15 @@ class ContactsViewController: UIViewController {
             self.isLoading = false
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailView" {
+            if let cell = sender as? TableViewCell {
+                let detail = segue.destination as! DetailViewController
+                detail.user = cell.user
+            }
+        }
+    }
 }
 
 extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {

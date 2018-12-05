@@ -21,6 +21,7 @@ struct Results: Decodable {
     let dob: Dob
     let picture: Picture
     let phone: String
+    let email: String
     
     enum CodingKeys: String, CodingKey {
         case gender
@@ -28,6 +29,7 @@ struct Results: Decodable {
         case dob
         case picture
         case phone
+        case email
     }
     
     init(from decoder: Decoder) throws {
@@ -38,11 +40,12 @@ struct Results: Decodable {
         self.name = try container.decode(Name.self, forKey: .name)
         self.dob = try container.decode(Dob.self, forKey: .dob)
         self.picture = try container.decode(Picture.self, forKey: .picture)
+        self.email = try container.decode(String.self, forKey: .email)
     }
 }
 
 struct Dob: Codable {
-    let date: String
+    let date: Date
 }
 
 struct Name: Codable {

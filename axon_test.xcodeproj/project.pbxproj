@@ -16,6 +16,7 @@
 		A8446DCE21B7D7930070E015 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8446DCD21B7D7930070E015 /* Users.swift */; };
 		A8446DD021B7DF120070E015 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8446DCF21B7DF120070E015 /* TableViewCell.swift */; };
 		A8446DD221B81B740070E015 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8446DD121B81B740070E015 /* ContactsViewController.swift */; };
+		A8446DD421B825A70070E015 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8446DD321B825A70070E015 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A8446DCD21B7D7930070E015 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		A8446DCF21B7DF120070E015 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A8446DD121B81B740070E015 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		A8446DD321B825A70070E015 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A97BE4E2380DEC27C124EE78 /* Pods-axon_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-axon_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-axon_test/Pods-axon_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				A8446DCD21B7D7930070E015 /* Users.swift */,
 				A8446DCF21B7DF120070E015 /* TableViewCell.swift */,
 				A8446DD121B81B740070E015 /* ContactsViewController.swift */,
+				A8446DD321B825A70070E015 /* DetailViewController.swift */,
 			);
 			path = axon_test;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				A8446DD021B7DF120070E015 /* TableViewCell.swift in Sources */,
 				A8446DCE21B7D7930070E015 /* Users.swift in Sources */,
 				A8446DBA21B7D1030070E015 /* AppDelegate.swift in Sources */,
+				A8446DD421B825A70070E015 /* DetailViewController.swift in Sources */,
 				A8446DCC21B7D7420070E015 /* UserRequest.swift in Sources */,
 				A8446DD221B81B740070E015 /* ContactsViewController.swift in Sources */,
 			);
@@ -353,7 +357,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8AFKPKPS;
 				INFOPLIST_FILE = axon_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sperkhun.axon-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,7 +374,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8AFKPKPS;
 				INFOPLIST_FILE = axon_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sperkhun.axon-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";

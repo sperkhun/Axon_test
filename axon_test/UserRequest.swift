@@ -20,7 +20,9 @@ class UserRequest {
                     var result: Users?
                     
                     do {
-                        result = try JSONDecoder().decode(Users.self, from: value)
+                        let decoder = JSONDecoder()
+                        decoder.dateDecodingStrategy = .iso8601
+                        result = try decoder.decode(Users.self, from: value)
                     }
                     catch let error {
                         print(error)
