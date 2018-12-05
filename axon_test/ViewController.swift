@@ -10,16 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let request = UserRequest()
+    var users: [Results] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        request.makeRequest() { users in
+            if let users = users {
+                self.users = users.results
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
